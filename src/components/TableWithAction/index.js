@@ -13,12 +13,14 @@ function TableWithAction({
   editUrl,
   deleteAction,
   pages,
-  customAction
+  customAction,
+  status
 }) {
   return (
     <Table striped bordered hover>
       <Thead texts={thead} />
       <Tbody 
+        status={status}
         data={data}
         display={tbody}
         editUrl={editUrl}
