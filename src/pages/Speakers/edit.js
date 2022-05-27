@@ -41,6 +41,7 @@ function EditSpeakers() {
 
   useEffect(() => {
     fetchOneSpeaker();
+    // eslint-disable-next-line
   }, []);
 
   const handleChange = (e) => {

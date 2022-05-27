@@ -10,6 +10,9 @@ import { useEffect } from 'react';
 import { listen } from './redux/listener';
 import CreateSpeakers from './pages/Speakers/create';
 import EditSpeakers from './pages/Speakers/edit';
+import EventsPage from './pages/Events';
+import CreateEvents from './pages/Events/create';
+import EditEvents from './pages/Events/edit';
 
 function App() {
   useEffect(() => {
@@ -28,6 +31,9 @@ function App() {
         <Route path='/speakers' element={<Speakers />} />
         <Route path='/speakers/create' element={<CreateSpeakers />} />
         <Route path='/speakers/edit/:id' element={<EditSpeakers />} />
+        <Route path='/events' element={<EventsPage />} />
+        <Route path='/events/create' element={<CreateEvents />} />
+        <Route path='/events/edit/:id' element={<EditEvents />} />
       </Routes>
     </BrowserRouter>
   );
